@@ -21,7 +21,6 @@ class Display {
     this.dialog = document.querySelector("dialog");
     this.pop_up = document.querySelector("#pop_up");
 
-    //this.dialog.close()
     this.pop_up.addEventListener("click", () => {
       this.dialog.show();
     });
@@ -161,50 +160,9 @@ class Display {
       info.textContent = "Time left:";
       this.task_info.appendChild(info);
       this.task_info.appendChild(task_left);
-      //this.task_info.appendChild(task_description)
-      // this.task_info.appendChild(task_date)
     }
   }
 }
 
 window.display = new Display();
 display.updateScreen();
-
-/*
-display.user.addProject('second project')
-display.user.addProject('third project')
-console.log(display.user.project_list)
-*/
-
-/*
-const main = new Projects;
-main.addProject('second project')
-main.addProject('third project')
-let list = main.project_list
-for (let i =0; i <= list.length-1; i++){
-    console.log(list[i])
-}
-/*
-let second = main.getProject(1)
-console.log(second)
-let pro = main.outputProjects()
-console.log(pro)
-//main.removeProject(2)
-//console.log('removed')
-console.log(main.outputProjects())
-second.addTask('make bed', '15th March')
-second.addTask('eat', '15th March')
-console.log(second)
-let secondProject_secondTask = second.getTask(1)
-console.log(secondProject_secondTask)
-secondProject_secondTask.add_description('I will eat lasagne')
-secondProject_secondTask.mark_complete()
-console.log(secondProject_secondTask)
-console.log(main)
-//let allProjects = main.outputProjects()
-//console.log(main.project_list(1))
-/*
-project.addTask('make bed', '15th March')
-project.addTask('eat', '15th March')
-firstProject = main.getProject(0)
-console.log(firstProject) */
